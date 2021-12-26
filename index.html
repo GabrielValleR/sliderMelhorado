@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Takt op Destiny</title>
+        <script src="javascript.js" ></script>  
+        <style>
+            body{
+                
+                background-color: black;
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                
+            }
+            #divSlider{
+                width: 400px;
+                height: 648px;
+                border: 1px solid black;
+                box-sizing: border-box;
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .buttonSlider{
+                background-color: rgba(0,0,0,0.4);
+                height: 30%;
+                color: white;
+                cursor: pointer;
+                outline: none ;
+                margin: 10px;
+                border: none;
+            }
+            #load{
+                width: 100%;
+                height: 5px;
+                margin-top: 160%;
+                border: 1px solid rgba(255,255,255,0.3);
+
+            }
+            #bar{
+                width: 0%;
+                height: 100%;
+                background-color: white;
+
+            }
+        </style>     
+    </head>
+    <body>
+        <div id="divSlider">
+            <button class="buttonSlider" onclick="trocaImage(-1)"><</button>
+            <div id="load">
+                <div id="bar"></div>
+            </div>
+            <button class="buttonSlider" onclick="trocaImage(1)">></button>
+        </div>
+    </body>
+</html>
